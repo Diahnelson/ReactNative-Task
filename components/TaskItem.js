@@ -14,6 +14,10 @@ export default TaskItem = (props) => {
                 <TouchableOpacity onPress={() => props.deleteTask()}>
                     <MaterialIcons style={styles.delete} name="delete" size={18} color='#fff' />
                 </TouchableOpacity>
+                <TouchableOpacity onPress={() => props.doneTask()}>
+                    <MaterialIcons style={styles.delete} name="tick" size={18} color='#fff' />
+                </TouchableOpacity>
+                
             </View>
         </View>
     );
@@ -26,7 +30,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
     },
     indexContainer: {
-        backgroundColor: '#3E3364',
+        backgroundColor: '#6e1626',
         borderRadius: 12,
         marginRight: 10,
         alignItems: 'center',
@@ -39,7 +43,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
     },
     taskContainer: {
-        backgroundColor: '#3E3364',
+        backgroundColor: '#6e1626',
         borderRadius: 12,
         flexDirection: 'row',
         justifyContent: 'space-between',
