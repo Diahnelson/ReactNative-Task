@@ -18,8 +18,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-        <Text style={styles.heading}></Text>
-        <Text style={styles.heading}>Todo List </Text>
+        <Text style={styles.heading}>Todo List</Text>
       <ScrollView style={styles.scrollView}>
         {
         tasks.map((task, index) => {
@@ -39,7 +38,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ad727d',
+    backgroundColor: '#ba5b6d',
   },
   heading: {
     color: '#fff',
